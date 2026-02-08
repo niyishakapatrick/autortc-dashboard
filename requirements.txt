@@ -1,0 +1,17 @@
+altair
+pandas
+streamlit
+reportlab
+python-docx
+plotly
+python-dotenv
+langchain-core
+langchain-groq
+folium
+streamlit-folium
+joblib
+matplotlib
+scikit-learn
+xgboost
+lightgbm
+catboost
