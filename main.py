@@ -604,9 +604,9 @@ def page_home():
 
     st.markdown(f"""
     <div class="hero">
-      <h1 style="margin:0;">AutoRTC Intelligence</h1>
+      <h1 style="margin:0;">AutoRTC AI</h1>
       <p style="color:var(--muted);font-weight:700;margin-top:8px;">
-        Rwanda Road Safety Analytics • {len(df_f):,} crashes • {victims:,} victims
+        Rwanda Road Safety Analytics • {len(df_f):,} crashes
       </p>
     </div>
     """, unsafe_allow_html=True)
@@ -678,7 +678,7 @@ def page_ai():
     # --- Full report generator
     with left:
         st.markdown('<div class="ai-agent">', unsafe_allow_html=True)
-        st.markdown("<h3 style='margin-top:0;'>✨ Report Generator</h3>", unsafe_allow_html=True)
+        st.markdown("<h3 style='margin-top:0;'>🤖 AI Agent - Report Generator</h3>", unsafe_allow_html=True)
 
         st.markdown('<div class="btn-blue">', unsafe_allow_html=True)
         if st.button("Generate Full Report", key="btn_generate_report", use_container_width=True):
