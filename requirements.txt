@@ -1,6 +1,6 @@
 altair==4.2.2
 pandas
-streamlit
+streamlit>=1.40.0
 reportlab
 python-docx
 plotly
