@@ -567,14 +567,15 @@ with st.sidebar:
     c1, c2 = st.columns(2)
     c1.image("ur.png")
     c2.image("cmu.png")
-    st.divider()
-    source = st.selectbox("Data Source", ["CSV", "JSON", "SQLite"], index=0)
+    
     st.divider()
     pages = {"🏠 Home": "Home", "📊 Explore": "Explore", "📈 Models": "Models", "🤖 AI Hub": "AI Hub", "📄 Export": "Export"}
     labels = list(pages.keys())
     current_label = next((k for k, v in pages.items() if v == st.session_state.page), "🏠 Home")
     nav = st.radio("Navigation", labels, index=labels.index(current_label))
     st.session_state.page = pages[nav]
+    st.divider()
+    source = st.selectbox("Data Source", ["CSV", "JSON", "SQLite"], index=0)
 
     st.session_state.groq_api_key = st.text_input("Groq API Key", value=st.session_state.groq_api_key, type="password")
 
