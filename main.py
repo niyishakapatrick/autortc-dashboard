@@ -577,7 +577,7 @@ with st.sidebar:
     st.divider()
     source = st.selectbox("Data Source", ["CSV", "JSON", "SQLite"], index=0)
 
-    st.session_state.groq_api_key = st.text_input("Groq API Key", value=st.session_state.groq_api_key, type="password")
+    #st.session_state.groq_api_key = st.text_input("Groq API Key", value=st.session_state.groq_api_key, type="password")
 
 
 # ---------------- Data ----------------
